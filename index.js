@@ -1,18 +1,34 @@
 const typed = new Typed('.typed', {
-    strings: ['', 'Desarrollador Web;', 'Ingeniero Sofware;', ],
+    strings: ['','Web','Front-end' ],
     stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
-    typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
-    startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
-    backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+    typeSpeed: 85, // Velocidad en mlisegundos para poner una letra,
+    startDelay: 0, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+    backSpeed: 85, // Velocidad en milisegundos para borrrar una letra,
     //smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
     // shuffle: false, // Alterar el orden en el que escribe las palabras.
-    backDelay: 1700, // Tiempo de espera despues de que termina de escribir una palabra.
+    backDelay: 400, // Tiempo de espera despues de que termina de escribir una palabra.
     loop: true, // Repetir el array de strings
     //loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
     showCursor: true, // Mostrar cursor palpitanto
     cursorChar: '|', // Caracter para el cursor
     contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+const openMenu = () => {
+    sideMenu.style.display = 'block'
+}
+const closeMenu = () => {
+    sideMenu.style.display = 'none'
+}
+
+const sideMenu = document.getElementById('sidemenu')
+const burger = document.getElementById('burger')
+const close = document.getElementById('close')
+
+close.addEventListener('click', closeMenu)
+burger.addEventListener('click', openMenu)
+
+
 
 const openTabSkills = () => {
     EXPERIENCE.classList.remove("active-link")

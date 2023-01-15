@@ -25,28 +25,26 @@
         <nav>
             <div class="container container_nav">
                 <a class="logo" href="index.html">CarlosB;</a>
-                <ul class="navbar">
+                <ul class="navbar" id="sidemenu">
                     <li> <a href="#home" class="item-nav">Inicio</a></li>
                     <li> <a href="#abaut-me" class="item-nav">Sobre Mi</a></li>
                     <li><a href="#services" class="item-nav">Habilidades</a></li">
                     <li><a href="#porfolio" class="item-nav">Portafolio</a></li>
                     <a  href="#contact" class="btn-menu-contact">Contactame</a>
+                    <i class="fas fa-times" id="close"></i>
                 </ul>
+                <i class="fas fa-bars" id="burger"></i>
             </div>
         </nav>
         <div class="container">
             <div class="container_cover">
                 <div class="text_cover">
-                    <h1>
-                        Hola Mundo<span class="decoration">,</span> <br>
-                        Soy <span class="typed"></span>
-                    </h1>
-                    <p> Bienvenido, aqui podras conocer como trabajo <br>
-                        ademas de un poco mas sobre mi <span class="">:)</span>
-                    </p>
+                    <h1>Frontend Developer</h1>
+                    <span class="name">Carlos Bolaño;</span>
+                    <p>Estudiante De ingenieria de sofware con 1 año de experiencia <br> en el Desarrolo <span class="typed decoration"></span></p>
                     <div class="btns">
-                        <a class="btn btn-contact" href="#contact">Contact Me</a>
-                        <a class="btn2 btn-download" href="#">Download CV</a>
+                        <a class="btn btn-contact" href="#contact">Contactame</a>
+                        <a class="btn2 btn-download" href="#">Descargar CV</a>
                     </div>
                 </div>
                 <div class="box-img-cover">
@@ -54,6 +52,7 @@
                     <img src="images/yo1.jpg" alt="Carlos Bolaños" class="img-cover">
                 </div>
             </div>
+        </div>    
     </header>
     <!-- SECCION SOBRE MI -->
     <section id="abaut-me">
@@ -66,15 +65,11 @@
                 </div>
                 <div class="col-2">
                     <h1 class="sub-titles">Sobre Mi </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error corporis
-                        eligendi omnis
-                        labore perspiciatis perferendis ab, nam mollitia nulla voluptatum sit
-                        consequatur sunt expedita.
-                        Asperiores doloremque alias ut labore?</p>
+                    <p>Desarrollador web front-end con 1 año de experiencia desarrollando proyectos con tecnologias como html, css, JavaScript, React js, Node js y flask. Uso de herramientas como git, githud, visual studio code y la terminal. Tengo conocimientos basicos de Back-end, bases de datos (no relacionales), creacion de API REST y el consumo de Apis del lado del cliente</p>
                     <div class="tab-titles">
-                        <button class="tab-links active-link" id="EXPERIENCE">Experience</button>
-                        <button class="tab-links" id="SKILLS">Skills</button>
-                        <button class="tab-links" id="EDUCATION">Eucation</button>
+                        <button class="tab-links active-link" id="EXPERIENCE">Experiencia</button>
+                        <button class="tab-links" id="SKILLS">Habilidades</button>
+                        <button class="tab-links" id="EDUCATION">Educacion</button>
                     </div>
                     <div class="tab-contents active-tab" id="experience">
                         <ul>
@@ -119,7 +114,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque
                         inventore, officiis
                         eos quae itaque et perspiciatis repellendus cumque libero ipsam</p>
-                    <a href="">Leer Mas </a>
+                    <a href="https://www.google.com/search?q=que+es+el+desarrollo+web&rlz=1C1CHZN_esCO1033CO1033&oq=que+es+el+desarrollo+web+&aqs=chrome..69i57j0i512l3j0i22i30l4j0i22i30i625j0i22i30.9737j0j7&sourceid=chrome&ie=UTF-8">Leer Mas </a>
                 </div>
                 <div class="card">
                     <i class="fa-solid fa-crop-simple"></i>
@@ -131,7 +126,7 @@
                 </div>
                 <div class="card">
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>Desarrollo Apps</h2>
+                    <h2>Desarrollo App Web</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque
                         inventore, officiis
                         eos quae itaque et perspiciatis repellendus cumque libero ipsam</p>
@@ -205,14 +200,17 @@
 
     <!-- SECCION PORTAFOLIO -->
     <section id="porfolio">
-        <div class="container">
+        <div class="container container-porfolio">
             <h2 class="sub-titles">Mis Trabajos</h2>
             <div class="reciente">
                 <div class="img-reciente">
                     <img src="/images/work-2.png" alt="">
                 </div>
                 <div class="text-reciente">
-                    <h2> App de loteria</h2>
+                    <div class="content-titles">
+                        <h2> App de loteria</h2>
+                        <h5 class="reciente-title">#Reciente</h5>
+                    </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure voluptatum ab,
                         quos assumenda
                         iusto corporis reprehenderit non quod dolore corrupti?</p>
@@ -224,7 +222,10 @@
                     <img src="/images/work-3.png" alt="">
                 </div>
                 <div class="text-reciente">
-                    <h2> App de loteria</h2>
+                    <div class="content-titles">
+                        <h2> App de loteria</h2>
+                        <h5 class="reciente-title">#Reciente</h5>
+                    </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure voluptatum ab,
                         quos assumenda
                         iusto corporis reprehenderit non quod dolore corrupti?</p>
@@ -232,6 +233,32 @@
                 </div>
             </div>
             <div class="work-list">
+                <div class="work remplace-reciente">
+                    <img src="/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3> App de Red Social</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illum
+                            dolor similique
+                            doloribus!</P>
+                        <div class="botones">
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" ><i class="fa-brands fa-github"></i></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="work remplace-reciente">
+                    <img src="/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3> App de Red Social</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illum
+                            dolor similique
+                            doloribus!</P>
+                        <div class="botones">
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" ><i class="fa-brands fa-github"></i></a> 
+                        </div>
+                    </div>
+                </div>
                 <div class="work">
                     <img src="/images/work-2.png" alt="">
                     <div class="layer">
@@ -297,16 +324,17 @@
             </div>
             <div class="content-contact-right">
                 <form class="inputs-container">
-                    <input class="inputs" type="text" name="name" placeholder="Tu nombre" required>
-                    <input class="inputs" type="email" name="email" placeholder="Tu correo" required>
-                    <textarea class="inputs" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                    <input class="inputs" type="text" name="name" placeholder="Tu nombre" autocomplete="off" required>
+                    <input class="inputs" type="email" name="email" placeholder="Tu correo" autocomplete="off" required>
+                    <textarea class="inputs" name="message" rows="5" placeholder="Tu mensaje"  autocomplete="off" required></textarea>
                     <button class="btn-submit" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
-
-
     </section>
+    <footer id="footer">
+        <p>Hecho con <i class="fa fa-heart decoration"></i> por <a href="/index.html"> Carlos Bolaño</a></p>
+    </footer>
 
     <script src="typed.js"></script>
     <script src="index.js"></script>
