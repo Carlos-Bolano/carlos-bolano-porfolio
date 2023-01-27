@@ -312,9 +312,16 @@ nav ul li a:hover::after {
     margin: 10px 0;
 }
 
-.tab-contents ul li span {
+.tab-contents ul li h5 {
     color: var(--Yellow-color);
     font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.tab-contents ul li p{
+    font-size: 14px;
+    padding-left: 10px   ;
+    margin-bottom: 10px;
 }
 
 .tab-contents {
@@ -331,15 +338,14 @@ nav ul li a:hover::after {
     padding: 30px 0;
     transition: 0.5s;
 }
-
 .services-list {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-
 .services-list .card {
+    width: 100%;
     background-color: var(--Blue-color);
     font-size: 13px;
     padding: 30px 40px;
@@ -347,42 +353,21 @@ nav ul li a:hover::after {
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
-
 .services-list .card i {
     font-size: 50px;
     margin-bottom: 15px;
 }
-
 .services-list .card h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-
-.services-list .card a {
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-    border-bottom: solid 1px transparent;
-}
-
 .services-list .card:hover {
     background-color: var(--Yellow-color);
     color: var(--Dark-color);
     transform: translateY(-10px);
 }
-
-
-.services-list .card:hover a {
-    color: black;
-    font-weight: 500;
-    border-bottom: solid 1px var(--Dark-color);
-}
-
 /* --------------------- SKILLS ------------------ */
-
 .container-skills {
     max-width: 1200px;
     margin: auto;
@@ -461,7 +446,6 @@ nav ul li a:hover::after {
 }
 
 .content-titles {
-    /* background-color: #e2e2e2; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -471,6 +455,7 @@ nav ul li a:hover::after {
     display: none;
 }
 .reciente-title {
+    color: var(--Yellow-color);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -511,32 +496,37 @@ nav ul li a:hover::after {
     font-weight: 600;
     margin-bottom: 20px;
 }
-
-.reciente .text-reciente .btn-deploy {
-    font-size: 13px;
+.btns-icons{
     margin-top: 20px;
-    padding: 8px 10px;
-    text-align: center;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
 }
-
+.btn-icons{
+    font-weight: bold;
+    color: var(--Yellow-color);
+    border: solid 2px var(--Yellow-color);
+    text-decoration: none;
+    transition: all .5s;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
 .reciente2 {
     flex-direction: row-reverse;
 }
 
-.reciente:hover {
+.reciente:hover .btn-icons{
     background-color: #fcbc0c;
-    color: #020412;
-    transform: translateY(-2px);
+    color: var(--Dark-color); 
 }
-
-.reciente:hover .btn-deploy {
-    background-color: var(--Blue-color);
-    color: #fcbc0c;
+.reciente:hover {
+    transform: translateY(-3px);
 }
 
 .reciente:hover img {
     transform: scale(1.1);
 }
+
 
 
 .work-list {
@@ -601,11 +591,9 @@ nav ul li a:hover::after {
     text-decoration: none;
     color: var(--Yellow-color);
     background: white;
-    width: 50px;
-    height: 50px;
-    line-height: 30px;
     border-radius: 50%;
     font-size: 25px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

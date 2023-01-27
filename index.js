@@ -30,19 +30,8 @@ burger.addEventListener('click', openMenu)
 
 
 
-const openTabSkills = () => {
-    EXPERIENCE.classList.remove("active-link")
-    experience.classList.remove("active-tab")
 
-    EDUCATION.classList.remove("active-link")
-    education.classList.remove("active-tab")
-
-    SKILLS.classList.add("active-link")
-    skills.classList.add("active-tab")
-}
 const openTabExperience = () => {
-    SKILLS.classList.remove("active-link")
-    skills.classList.remove("active-tab")
 
     EDUCATION.classList.remove("active-link")
     education.classList.remove("active-tab")
@@ -51,9 +40,6 @@ const openTabExperience = () => {
     experience.classList.add("active-tab")
 }
 const openTabEducation = () => {
-    SKILLS.classList.remove("active-link")
-    skills.classList.remove("active-tab")
-
     EXPERIENCE.classList.remove("active-link")
     experience.classList.remove("active-tab")
 
@@ -61,15 +47,14 @@ const openTabEducation = () => {
     education.classList.add("active-tab")
 }
 // ------- BOTONES -----------
-const SKILLS = document.getElementById("SKILLS")
 const EXPERIENCE = document.getElementById("EXPERIENCE")
 const EDUCATION = document.getElementById("EDUCATION")
 // ----------- CONTENIDO -----------
-const skills = document.getElementById("skills")
+
 const experience = document.getElementById("experience")
 const education = document.getElementById("education")
 // -----------EVENTOS CLICKS------------
-SKILLS.addEventListener('click', openTabSkills)
+
 EXPERIENCE.addEventListener('click', openTabExperience)
 EDUCATION.addEventListener('click', openTabEducation)
 
